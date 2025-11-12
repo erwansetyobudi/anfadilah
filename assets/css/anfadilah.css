@@ -1,0 +1,1010 @@
+/*--------------------------------------------------------------
+# bg navbar
+--------------------------------------------------------------*/
+.bg-hijau {
+    background: linear-gradient(45deg, #005050, #00a5a5, #005050);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s infinite;
+}
+
+/* e-resource */
+.equal-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Posisikan gambar di tengah */
+}
+
+/* e-resource end */
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+    text-align: center;
+    border: 1px solid #609fdf;
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+
+    /* Menambahkan shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sesuaikan nilai sesuai kebutuhan */
+}
+
+.services .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform-style: preserve-3d;
+    position: relative;
+    z-index: 2;
+}
+
+.services .icon-box .icon i {
+    color: #fff;
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+}
+
+.services .icon-box .icon::before {
+    position: absolute;
+    content: "";
+    left: -8px;
+    top: -8px;
+    height: 100%;
+    width: 100%;
+    background: rgba(25, 119, 204, 0.2);
+    border-radius: 5px;
+    transition: all 0.3s ease-out 0s;
+    transform: translateZ(-1px);
+    z-index: -1;
+}
+
+.services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.services .icon-box h4 a {
+    color: #2c4964;
+}
+
+.services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+}
+
+.services .icon-box:hover .icon {
+    background: #fff;
+}
+
+.services .icon-box:hover .icon i {
+    color: #ffffff;
+}
+
+.services .icon-box:hover .icon::before {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p {
+    color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+    background: #257f6c;
+    height: 25px;
+    font-size: 12px;
+    /* transition: all 0.5s; */
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+
+#topbar.topbar-scrolled {
+    top: -40px;
+}
+
+#topbar .contact-info a {
+    line-height: 1;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+    color: #ffffff;
+}
+
+#topbar .contact-info i {
+    color: #ffffff;
+    padding-right: 4px;
+    margin-left: 15px;
+    line-height: 0;
+}
+
+#topbar .contact-info i:first-child {
+    margin-left: 0;
+}
+
+#topbar .social-links a {
+    color: #ffffff;
+    padding-left: 15px;
+    display: inline-block;
+    line-height: 1px;
+    transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+    color: #ffffff;
+}
+
+#topbar .social-links a:first-child {
+    border-left: 0;
+}
+
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+.sticky-top {
+    top: 25px;
+    transition: .5s;
+    background-color: #ffffff;
+    position: fixed;
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flag-icon-us {
+    padding-left: 40px;
+}
+
+.navbar {
+    padding: 11px 0 !important;
+    height: 75px;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 20px;
+    padding: 0;
+    color: rgba(255, 255, 255, .7);
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        padding: 0 15px;
+        background:#00a5a5;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+/* link terkait */
+section#screens {
+    background: #fff;
+}
+
+section#screens header h1:after {
+    background: #348dcc;
+}
+
+section#screens .slider-bg {
+    width: 200px;
+    height: 120px;
+    margin: 20px 0px;
+}
+
+section#screens .slider div h4 {
+    color: #999999;
+}
+
+section#screens .slider .slick-dots li button {
+    background: #999999;
+}
+
+section#screens .slider .slick-dots li.slick-active button {
+    background: #348dcc;
+}
+
+section#screens .filter a {
+    border: 2px solid #cccccc;
+    color: #999999;
+}
+
+section#screens .filter a:hover {
+    color: #ffffff;
+    background: #348dcc;
+    border-color: #348dcc;
+}
+
+section#screens .filter a.active {
+    color: #ffffff;
+    background: #348dcc;
+    border-color: #348dcc;
+}
+
+
+/*--------------------------------------------------------------
+# e-resource
+--------------------------------------------------------------*/
+section#getApp {
+    position: relative;
+    background: #fff;
+}
+
+section#getApp header {
+    color: #ffffff;
+}
+
+section#getApp header h1:after {
+    background: #ffffff;
+}
+
+section#getApp .platforms .media {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+section#getApp .platforms .media a i {
+    color: #ffffff;
+}
+
+section#getApp .platforms .media a div.media-body {
+    color: #ffffff;
+}
+
+section#getApp .platforms .media:hover {
+    background: #ffffff;
+}
+
+section#getApp .platforms .media:hover a i,
+section#getApp .platforms .media:hover a div.media-body {
+    color: #348dcc;
+}
+
+
+.equal-image {
+    height: 80px;
+    /* Sesuaikan tinggi sesuai kebutuhan Anda */
+    object-fit: contain;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #ddd;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.025); */
+}
+
+/* Menghilangkan margin di kolom kecil untuk menghindari perubahan tata letak */
+@media (max-width: 768px) {
+    .col-xs-6 {
+        margin-bottom: 0;
+    }
+}
+
+.project,
+.post {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 2px
+}
+
+.project img {
+    max-width: 100%;
+    /* Maksimalkan lebar gambar sesuai dengan lebar kontainer */
+    max-height: 100%;
+    /* Maksimalkan tinggi gambar sesuai dengan tinggi kontainer */
+    margin: auto;
+    /* Menempatkan gambar di tengah horizontal */
+    display: block;
+    /* Mengatasi margin tambahan di bagian bawah gambar */
+}
+
+.project figure,
+.post figure {
+    margin: 0;
+    position: relative;
+}
+
+.project .project-hover,
+.project .post-hover,
+.post .project-hover,
+.post .post-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(2, 80, 80, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.project .project-hover .project-hover-inner,
+.project .project-hover .post-hover-inner,
+.project .post-hover .project-hover-inner,
+.project .post-hover .post-hover-inner,
+.post .project-hover .project-hover-inner,
+.post .project-hover .post-hover-inner,
+.post .post-hover .project-hover-inner,
+.post .post-hover .post-hover-inner {
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    top: 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .3s all ease;
+    text-align: center;
+}
+
+.project .project-hover .project-hover-inner h2,
+.project .project-hover .post-hover-inner h2,
+.project .post-hover .project-hover-inner h2,
+.project .post-hover .post-hover-inner h2,
+.post .project-hover .project-hover-inner h2,
+.post .project-hover .post-hover-inner h2,
+.post .post-hover .project-hover-inner h2,
+.post .post-hover .post-hover-inner h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.2;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    bottom: -30px;
+}
+
+.project .project-hover .project-hover-inner span,
+.project .project-hover .post-hover-inner span,
+.project .post-hover .project-hover-inner span,
+.project .post-hover .post-hover-inner span,
+.post .project-hover .project-hover-inner span,
+.post .project-hover .post-hover-inner span,
+.post .post-hover .project-hover-inner span,
+.post .post-hover .post-hover-inner span {
+    font-size: 14px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    bottom: -30px;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+.project:hover .project-hover,
+.project:hover .post-hover,
+.project:focus .project-hover,
+.project:focus .post-hover,
+.post:hover .project-hover,
+.post:hover .post-hover,
+.post:focus .project-hover,
+.post:focus .post-hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.project:hover .project-hover .project-hover-inner,
+.project:hover .project-hover .post-hover-inner,
+.project:hover .post-hover .project-hover-inner,
+.project:hover .post-hover .post-hover-inner,
+.project:focus .project-hover .project-hover-inner,
+.project:focus .project-hover .post-hover-inner,
+.project:focus .post-hover .project-hover-inner,
+.project:focus .post-hover .post-hover-inner,
+.post:hover .project-hover .project-hover-inner,
+.post:hover .project-hover .post-hover-inner,
+.post:hover .post-hover .project-hover-inner,
+.post:hover .post-hover .post-hover-inner,
+.post:focus .project-hover .project-hover-inner,
+.post:focus .project-hover .post-hover-inner,
+.post:focus .post-hover .project-hover-inner,
+.post:focus .post-hover .post-hover-inner {
+    visibility: visible;
+    opacity: 1;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+.project:hover .project-hover .project-hover-inner h2,
+.project:hover .project-hover .post-hover-inner h2,
+.project:hover .post-hover .project-hover-inner h2,
+.project:hover .post-hover .post-hover-inner h2,
+.project:focus .project-hover .project-hover-inner h2,
+.project:focus .project-hover .post-hover-inner h2,
+.project:focus .post-hover .project-hover-inner h2,
+.project:focus .post-hover .post-hover-inner h2,
+.post:hover .project-hover .project-hover-inner h2,
+.post:hover .project-hover .post-hover-inner h2,
+.post:hover .post-hover .project-hover-inner h2,
+.post:hover .post-hover .post-hover-inner h2,
+.post:focus .project-hover .project-hover-inner h2,
+.post:focus .project-hover .post-hover-inner h2,
+.post:focus .post-hover .project-hover-inner h2,
+.post:focus .post-hover .post-hover-inner h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    opacity: 1;
+    visibility: visible;
+    bottom: 0px;
+}
+
+.project:hover .project-hover .project-hover-inner span,
+.project:hover .project-hover .post-hover-inner span,
+.project:hover .post-hover .project-hover-inner span,
+.project:hover .post-hover .post-hover-inner span,
+.project:focus .project-hover .project-hover-inner span,
+.project:focus .project-hover .post-hover-inner span,
+.project:focus .post-hover .project-hover-inner span,
+.project:focus .post-hover .post-hover-inner span,
+.post:hover .project-hover .project-hover-inner span,
+.post:hover .project-hover .post-hover-inner span,
+.post:hover .post-hover .project-hover-inner span,
+.post:hover .post-hover .post-hover-inner span,
+.post:focus .project-hover .project-hover-inner span,
+.post:focus .project-hover .post-hover-inner span,
+.post:focus .post-hover .project-hover-inner span,
+.post:focus .post-hover .post-hover-inner span {
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Hero Header ***/
+.hero-header {
+    /* margin-top: -75px; */
+    background: url(../images/bg-hero.png) center center no-repeat;
+    background-size: cover;
+}
+
+/* operational */
+.operational-section i {
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+.operational-section p {
+    font-size: 0.9em;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* bg call action  */
+.custom-bg-tosca {
+    background-color: #08b7a2;
+    /* Ganti dengan kode warna tosca yang diinginkan */
+}
+
+.loyola{
+        transition: .5s;
+    background-color: #257f6c;
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+}
+.loyola-yellow{
+        transition: .5s;
+    background-color: yellow;
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.pattern {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 40px;
+    overflow: hidden;
+
+    div {
+        background-image: url(../images/pattern-bottom.svg);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        height: 40px;
+        width: 80px;
+        margin-left: -5px;
+    }
+}
+
+.pattern-bottom {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 40px;
+        z-index: 0;
+        background-image: url(../images/pattern-bottom.svg);
+        background-repeat: repeat-x;
+        background-position: bottom center;
+        background-size: contain;
+    }
+}
+
+.pattern-vertical {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        bottom: 0;
+        top: 0;
+        z-index: 0;
+        background-image: url(../images/pattern-vertical.svg);
+        background-repeat: repeat-y;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+
+.widget .tns-carousel .tns-nav {
+  padding-top: 0.5rem;
+}
+
+.widget-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.widget-list[data-simplebar] {
+  overflow-x: hidden;
+}
+
+.widget-title {
+  margin-bottom: 1.125rem;
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+.widget-categories .accordion-item {
+  border: 0;
+  border-radius: 0;
+}
+.widget-categories .accordion-body {
+  padding: 0.625rem 0;
+}
+.widget-categories .accordion-button {
+  padding: 0.444rem 0;
+  font-size: 0.9375rem;
+  font-weight: normal;
+  color: var(--cz-primary);
+  box-shadow: none;
+}
+.widget-categories .accordion-button::after {
+  width: 1.375rem;
+  height: 1.375rem;
+  padding-top: 0.0625rem;
+  background-image: none;
+  background-color: rgba(var(--cz-primary-rgb), 0.1);
+  font-family: "cartzilla-icons";
+  font-size: 0.5rem;
+  font-weight: bold;
+  content: "\e906";
+  text-align: center;
+  line-height: 1.375rem;
+}
+.widget-categories .accordion-button.collapsed {
+  color: #4b566b;
+}
+.widget-categories .accordion-button.collapsed::after {
+  background-color: #f3f5f9;
+}
+.widget-categories .accordion-button:hover {
+  color: var(--cz-primary);
+}
+.widget-categories .accordion-button:hover::after {
+  background-color: rgba(var(--cz-primary-rgb), 0.1);
+}
+.widget-categories .widget-list-item {
+  margin-bottom: 0.375rem;
+  padding-left: 0.75rem;
+}
+.widget-categories .widget-list:not([data-simplebar]) {
+  border-right: 2px solid #e3e9ef;
+}
+.widget-categories .widget-list:not([data-simplebar]) .widget-list-item {
+  padding-right: 1rem;
+}
+.widget-categories .widget-list:not([data-simplebar]) .widget-list-item .widget-list:not([data-simplebar]) {
+  border-right: 0;
+}
+
+.widget-list-item {
+  margin-bottom: 0.5rem;
+}
+.widget-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.widget-list-link {
+  display: block;
+  transition: color 0.25s ease-in-out;
+  color: #4b566b;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+.widget-list-link:hover {
+  color: var(--cz-primary);
+}
+
+.active > .widget-list-link {
+  color: var(--cz-primary);
+}
+
+.widget-light .widget-list-link {
+  color: rgba(255, 255, 255, 0.65);
+}
+.widget-light .widget-list-link:hover {
+  color: #fff;
+}
+.widget-light .active > .widget-list-link {
+  color: #fff;
+}
+
+.widget-product-title {
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.widget-product-title > a {
+  color: #373f50;
+}
+.widget-product-title:hover > a {
+  color: var(--cz-primary);
+}
+
+.widget-product-meta {
+  font-size: 0.875rem;
+}
+
+.widget-cart-item {
+  position: relative;
+}
+.widget-cart-item .btn-close {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: auto;
+  padding: 0;
+  transform: translateY(-50%);
+  transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  visibility: hidden;
+  opacity: 0;
+}
+.widget-cart-item > .d-flex {
+  transition: all 0.25s ease-in-out;
+}
+.widget-cart-item:hover > .d-flex {
+  transform: translateX(1.125rem);
+}
+.widget-cart-item:hover .btn-close {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.bg-dark {
+  --cz-bg-opacity: 1;
+  background-color: #353535 !important;
+}
+
+.bg-gray {
+  --cz-bg-opacity: 1;
+  background-color: rgba(var(--cz-gray-rgb), var(--cz-bg-opacity)) !important;
+}
+
+.bg-slate {
+  --cz-bg-opacity: 1;
+  background-color: rgba(var(--cz-slate-rgb), var(--cz-bg-opacity)) !important;
+}
+
+.bg-black {
+  --cz-bg-opacity: 1;
+  background-color: #000 !important;
+}
+
+.bg-white {
+  --cz-bg-opacity: 1;
+  background-color: white;
+}
+.bg-white-visitor {
+  --cz-bg-opacity: 1;
+  background-color:rgba(255, 255, 255, 0.8);
+}
+
+.bg-body {
+  --cz-bg-opacity: 1;
+  background-color: rgba(var(--cz-body-bg-rgb), var(--cz-bg-opacity)) !important;
+}
+
+.bg-transparent {
+  --cz-bg-opacity: 1;
+  background-color: transparent !important;
+}
+
+.bg-darker {
+  --cz-bg-opacity: 1;
+  background-color: #257f6c !important;
+}
+
+.bg-opacity-10 {
+  --cz-bg-opacity: 0.1;
+}
+
+.bg-opacity-25 {
+  --cz-bg-opacity: 0.25;
+}
+
+.bg-opacity-50 {
+  --cz-bg-opacity: 0.5;
+}
+
+.bg-opacity-75 {
+  --cz-bg-opacity: 0.75;
+}
+
+.bg-opacity-100 {
+  --cz-bg-opacity: 1;
+}
+
+.bg-gradient {
+  background-image: var(--cz-gradient) !important;
+}
+
+.bg-gray-100 {
+  background-color: var(--cz-gray-100);
+}
+
+.bg-gray-200 {
+  background-color: var(--cz-gray-200);
+}
+
+.bg-gray-300 {
+  background-color: var(--cz-gray-300);
+}
+
+.bg-gray-400 {
+  background-color: var(--cz-gray-400);
+}
+
+.bg-gray-500 {
+  background-color: var(--cz-gray-500);
+}
+
+.bg-gray-600 {
+  background-color: var(--cz-gray-600);
+}
+
+.bg-gray-700 {
+  background-color: var(--cz-gray-700);
+}
+
+.bg-gray-800 {
+  background-color: var(--cz-gray-800);
+}
+
+.bg-gray-900 {
+  background-color: var(--cz-gray-900);
+}
+
+.btn-apple{
+    background: url(../images/btn-apple.png) center center no-repeat;
+}
+.btn-google{
+    background: url(../images/btn-google.png) center center no-repeat;
+}
+
+.bg-faded-pink {
+    --cz-bg-opacity: 0.09;
+    background-color: rgba(var(--cz-pink-rgb), var(--cz-bg-opacity)) !important;
+}
+
+.bg-faded-accent {
+    --cz-bg-opacity: 0.09;
+    background-color: rgba(var(--cz-accent-rgb), var(--cz-bg-opacity)) !important;
+}
+
+.bg-jazz{
+    --cz-bg-opacity: 1;
+    background-color: #e4e6e8 !important;
+}
+
+.news-title a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.news-meta h5 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+form textarea {
+    resize: none;
+}
+
+  :root { --nav-accent: #16b2ab; --nav-accent-hover: #0f7f7a; }
+
+  /* Warna link menu utama */
+  .navbar .nav-link {
+    color: var(--nav-accent) !important;
+  }
+  .navbar .nav-link:hover,
+  .navbar .nav-link:focus {
+    color: var(--nav-accent-hover) !important;
+  }
+
+  /* Aktif & open (dropdown terbuka) */
+  .navbar .nav-item.active > .nav-link,
+  .navbar .dropdown.show > .nav-link {
+    color: var(--nav-accent) !important;
+    font-weight: 600;
+  }
+
+  /* Warna caret (segitiga) dropdown */
+  .navbar .dropdown-toggle::after {
+    border-top-color: var(--nav-accent);
+  }
+  .navbar .dropdown.show .dropdown-toggle::after {
+    border-top-color: var(--nav-accent-hover);
+  }
+
+  /* Warna submenu (dropdown-item) */
+  .navbar .dropdown-menu .dropdown-item {
+    color: var(--nav-accent) !important;
+  }
+  .navbar .dropdown-menu .dropdown-item:hover,
+  .navbar .dropdown-menu .dropdown-item:focus {
+    color: var(--nav-accent-hover) !important;
+    background-color: rgba(22, 178, 171, 0.08);
+  }
+
+  /* (Opsional) garis tepi dropdown biar nyambung */
+  .navbar .dropdown-menu {
+    border-color: rgba(22, 178, 171, 0.25);
+  }
+
+  /* (Opsional) badge tetap kontras */
+  .navbar .badge-danger {
+    background-color: #dc3545; /* biarkan merah agar terbaca */
+  }
+
+  /* (Opsional) kalau pakai .navbar-light, pastikan linknya tetap pakai accent */
+  .navbar-light .navbar-nav .nav-link {
+    color: var(--nav-accent) !important;
+  }
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link:focus {
+    color: var(--nav-accent-hover) !important;
+  }
+
+    @media all and (min-width: 992px) {
+  .navbar{ padding-top: 0; padding-bottom: 0; }
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; padding:20px;  }
+  .navbar .nav-link{ padding-top:1rem; padding-bottom:1rem;  }
+}
+.megasubmenu{ padding: 20px; }
+
+@media (min-width: 992px){
+  .dropdown-menu .dropdown-toggle:after{
+    border-top: .3em solid transparent;
+      border-right: 0;
+      border-bottom: .3em solid transparent;
+      border-left: .3em solid;
+  }
+  .dropdown-menu{
+    margin:0; 
+  }
+  .megasubmenu{ 
+    left:100%; 
+    right: 0;
+    top:0; min-height: 100%; 
+  }
+  .dropdown-menu > li:hover .megasubmenu{
+    display: block;
+  }
+}
