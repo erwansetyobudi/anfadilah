@@ -129,7 +129,7 @@
             </div>
         </div>
         <div class="col-md-6 mb-4">
-             <img class="d-block ms-auto -mt-20" width="100%" src="template/default-blue/assets/images/joinus.png" alt="Shop Converse">
+             <img class="d-block ms-auto -mt-20" width="100%" src="<?php echo assets('images/joinus.png'); ?>" alt="Shop Converse">
         </div>
     </div>
 </section>
@@ -144,7 +144,7 @@
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
                 </br>
-                    <img class="img-fluid pb-5 pl-20" width="100%" height="100%"  src="template/default-blue/assets/images/welcome.jpg" alt="">
+                    <img class="img-fluid pb-5 pl-20" width="100%" height="100%"  src="<?php echo assets('images/welcome.jpg'); ?>" alt="">
                 </div>
             </div>
         </div>
@@ -217,7 +217,7 @@
                 <div class="w-48 pr-4 pb-4 mx-auto">
                     <div class="project about-item scrollpoint sp-effect2">
                         <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">
-                            <img src="template/default-blue/assets/images/pubmed.png" class="text-center img-responsive equal-image">
+                            <img src="<?php echo assets('images/pubmed.png'); ?>" class="text-center img-responsive equal-image">
                             <div class="project-hover">
                                 <div class="project-hover-inner">
                                     <h2>Pubmed</h2>
@@ -229,7 +229,7 @@
                 <div class="w-48 pr-4 pb-4 mx-auto">
                     <div class="project about-item scrollpoint sp-effect2">
                         <a href="https://www.sciencedirect.com/" target="_blank">
-                            <img src="template/default-blue/assets/images/sciencedirect.png" class="text-center img-responsive equal-image">
+                            <img src="<?php echo assets('images/sciencedirect.png'); ?>" class="text-center img-responsive equal-image">
                             <div class="project-hover">
                                 <div class="project-hover-inner">
                                     <h2>Science Direct</h2>
@@ -241,7 +241,7 @@
                 <div class="w-48 pr-4 pb-4 mx-auto">
                     <div class="project about-item scrollpoint sp-effect2">
                         <a href="https://www.scopus.com/sources.uri" target="_blank">
-                            <img src="template/default-blue/assets/images/scopus.png" class="text-center img-responsive equal-image">
+                            <img src="<?php echo assets('images/scopus.png'); ?>" class="text-center img-responsive equal-image">
                             <div class="project-hover">
                                 <div class="project-hover-inner">
                                     <h2>Scopus</h2>
@@ -253,7 +253,7 @@
                 <div class="w-48 pr-4 pb-4 mx-auto">
                     <div class="project about-item scrollpoint sp-effect2">
                         <a href="https://www.proquest.com/" target="_blank">
-                            <img src="template/default-blue/assets/images/proquest.png" class="text-center img-responsive equal-image">
+                            <img src="<?php echo assets('images/proquest.png'); ?>" class="text-center img-responsive equal-image">
                             <div class="project-hover">
                                 <div class="project-hover-inner">
                                     <h2>Proquest</h2>
@@ -265,7 +265,7 @@
                 <div class="w-48 pr-4 pb-4 mx-auto">
                     <div class="project about-item scrollpoint sp-effect2">
                         <a href="https://doaj.org/" target="_blank">
-                            <img src="template/default-blue/assets/images/doaj.png" class="text-center img-responsive equal-image">
+                            <img src="<?php echo assets('images/doaj.png'); ?>" class="text-center img-responsive equal-image">
                             <div class="project-hover">
                                 <div class="project-hover-inner">
                                     <h2>DOAJ</h2>
@@ -277,7 +277,7 @@
                 <div class="w-48 pr-4 pb-4 mx-auto">
                     <div class="project about-item scrollpoint sp-effect2">
                         <a href="https://e-resources.perpusnas.go.id/" target="_blank">
-                            <img src="template/default-blue/assets/images/perpusnas.png" class="text-center img-responsive equal-image">
+                            <img src="<?php echo assets('images/perpusnas.png'); ?>" class="text-center img-responsive equal-image">
                             <div class="project-hover">
                                 <div class="project-hover-inner">
                                     <h2>E-Resources PNRI</h2>
@@ -293,7 +293,7 @@
                 <div class="w-48 pr-4 pb-4 mx-auto">
                     <div class="project about-item scrollpoint sp-effect2">
                         <a href="https://iris.who.int/" target="_blank">
-                            <img src="template/default-blue/assets/images/iris.png" class="text-center img-responsive equal-image">
+                            <img src="<?php echo assets('images/iris.png'); ?>" class="text-center img-responsive equal-image">
                             <div class="project-hover">
                                 <div class="project-hover-inner">
                                     <h2>IRIS</h2>
@@ -305,7 +305,7 @@
                 <div class="w-48 pr-4 pb-4 mx-auto">
                     <div class="project about-item scrollpoint sp-effect2">
                         <a href="https://www.biomedcentral.com/" target="_blank">
-                            <img src="template/default-blue/assets/images/bmc.png" class="text-center img-responsive equal-image">
+                            <img src="<?php echo assets('images/bmc.png'); ?>" class="text-center img-responsive equal-image">
                             <div class="project-hover">
                                 <div class="project-hover-inner">
                                     <h2>Biomed Central</h2>
@@ -317,7 +317,7 @@
                 <div class="w-48 pr-4 pb-4 mx-auto">
                     <div class="project about-item scrollpoint sp-effect2">
                         <a href="https://scholar.google.com/" target="_blank">
-                            <img src="template/default-blue/assets/images/scholar.png" class="text-center img-responsive equal-image">
+                            <img src="<?php echo assets('images/scholar.png'); ?>" class="text-center img-responsive equal-image">
                             <div class="project-hover">
                                 <div class="project-hover-inner">
                                     <h2>Google Scholar</h2>
@@ -329,7 +329,7 @@
                 <div class="w-48 pr-4 pb-4 mx-auto">
                     <div class="project about-item scrollpoint sp-effect2">
                         <a href="https://www.springeropen.com/" target="_blank">
-                            <img src="template/default-blue/assets/images/springer.png" class="text-center img-responsive equal-image">
+                            <img src="<?php echo assets('images/springer.png'); ?>" class="text-center img-responsive equal-image">
                             <div class="project-hover">
                                 <div class="project-hover-inner">
                                     <h2>Springer Open</h2>
