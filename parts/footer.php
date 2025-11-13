@@ -90,8 +90,8 @@
                 <div class="widget pb-2 mb-4">
                     <h3 class="widget-title text-light pb-1">Download</h3>
                     <div class="d-flex flex-wrap">
-                          <a href="#"><img style="width: 164px; height: 56px;" class="img-fluid" src="template/default-blue/assets/images/btn-apple.png" alt=""></a>
-                         <a href="#"><img style="width: 164px; height: 56px;" class="img-fluid" src="template/default-blue/assets/images/btn-google.png" alt=""></a>
+                          <a href="#"><img style="width: 164px; height: 56px;" class="img-fluid" src="<?php echo assets('images/btn-apple.png'); ?>" alt=""></a>
+                         <a href="#"><img style="width: 164px; height: 56px;" class="img-fluid" src="<?php echo assets('images/btn-google.png'); ?>" alt=""></a>
                     </div>
                 </div>
             </div>
