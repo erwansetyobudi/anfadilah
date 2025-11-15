@@ -134,6 +134,13 @@
                 </div>
             </div>
             <hr class="hr-light mb-5">
+                <br>
+            <p style="font-size: 8px; color: #f8f9fa;">
+              Powered By 
+              <a href="https://slims.web.id" style="color:#f8f9fa; text-decoration:none;">SLiMS</a> 
+              | Theme By 
+              <a href="https://github.com/erwansetyobudi/" style="color:#f8f9fa; text-decoration:none;">Erwan Setyo Budi</a>
+            </p>
 
         </div>
         <div class="container pattern">
